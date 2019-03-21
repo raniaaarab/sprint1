@@ -16,10 +16,10 @@ export class UeAccordion {
     @State() uniteenseignements: any = [];
 
     @State() elementsconstitutifs: any = [];
-    @State() accordions;
+     accordions;
 
 
-
+    
    
 
 
@@ -30,7 +30,7 @@ export class UeAccordion {
             .then(json => (this.uniteenseignements = json || []))
             .then(a => console.log("ue par code for" + a))
             .catch(error => console.log("Error while loading unites enseignements: " + error.message))
-            .then(()=>this.accordions = bulmaAccordion.attach())
+            .then(()=>this.accordions = bulmaAccordion.attach());
 
     }
 
@@ -52,17 +52,43 @@ export class UeAccordion {
     }
 
     render() {
-
-
+        
         return (
             <div class="form-home container">
             <br></br>
+            
+            
+
+
                 <section class="accordions">
 
 
                 <h1 class="title is-2">Les UEs de la formation {this.match.params.codeformation}</h1> <br />
-                    {this.uniteenseignements.map(uniteenseignement => {
-                        return (
+
+                {this.uniteenseignements.length==0 ? 
+            
+                
+
+            <div class="form-home container">
+        <br/><br/><br/>
+            <article class="message is-info">
+                <div class="message-header">
+                    <p>Oups!</p>
+                    <a href="/evae/for" >
+                    <button class="delete" aria-label="delete"></button>
+                      </a>
+                    
+                </div>
+                <div class="message-body">
+                    La formation. <strong>{this.match.params.codeformation}</strong>, ne contient aucune unité d'enseignement. Pensez à la remplir?!
+</div>
+            </article>
+            <br/><br/><br/><br/><br/><br/>
+        </div>
+        :
+        <br/>
+}
+                    {this.uniteenseignements.map(uniteenseignement => 
 
                             <article class="accordion ">
                                 <div class="accordion-header ">
@@ -91,7 +117,7 @@ export class UeAccordion {
 
 
                                                 <div class="accordion-content">
-                                                    {elementconstitutif.designation}
+                                                    {elementconstitutif.designation} 
                                                 </div>
 
 
@@ -99,23 +125,24 @@ export class UeAccordion {
 
 
                                         })}
-
+                                    
                                 </div>
                             </article>
 
 
 
-                        );
-                    })}
+                        
+                    )}
 
 
 
 
                 </section>
+
+                <br/><br/><br/>
             </div>
 
         );
-
 
     }
 }

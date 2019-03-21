@@ -71,6 +71,30 @@ export class EtuHome {
 
            <a href="/evae/for"><i class="fas fa-long-arrow-alt-left fa-5x"></i></a>
           <h1 class="title is-1 has-text-centered">{this.match.params.codeFormation +" -  "+ this.match.params.anneUniversitaire} </h1> <br />
+          {this.etudiants.length==0 ? 
+            
+                
+
+            <div class="form-home container">
+        <br/><br/><br/>
+            <article class="message is-info">
+                <div class="message-header">
+                    <p>Oups!</p>
+                    <a href="/evae/for" >
+                    <button class="delete" aria-label="delete"></button>
+                      </a>
+                    
+                </div>
+                <div class="message-body">
+                    La Promotion. <strong>{this.match.params.codeFormation +" -  "+ this.match.params.anneUniversitaire}</strong>, ne contient aucun étudiant. Pensez à la remplir?!
+</div>
+            </article>
+            <br/><br/><br/><br/><br/><br/>
+        </div>
+        :
+        <br/>
+}
+          
           {this.displayNotif ? (
             <div class="columns is-centered">
               <div class="column is-4">
