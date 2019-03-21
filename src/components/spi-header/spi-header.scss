@@ -1,0 +1,25 @@
+@import "../../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../../node_modules/bulma/sass/elements/button.sass";
+
+.spi-header {
+  z-index: 999;
+
+  .navbar-brand .navbar-item {
+    font-size: 3em;
+  }
+
+  .navbar-menu .navbar-item {
+    font-size: 2.5em;
+  }
+
+  .navbar-brand .navbar-item svg {
+    margin-right: 0.20em;
+  }
+
+  .navbar-brand strong {
+    color: $white;
+  }
+  .navbar a {
+    color: white;
+  }
+}

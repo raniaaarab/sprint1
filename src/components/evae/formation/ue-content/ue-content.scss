@@ -1,0 +1,25 @@
+@import "../../../../../node_modules/bulma/sass/components/card.sass";
+@import "../../../../../node_modules/bulma/sass/components/dropdown.sass";
+@import "../../../../../node_modules/bulma/sass/components/menu.sass";
+@import "../../../../../node_modules/bulma/sass/elements/title.sass";
+
+
+
+@import "../../../../../node_modules/bulma-extensions/bulma-accordion/src/sass/index.sass";
+
+
+body {
+ 
+    //margin-top:0px;
+     background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full%20page/img(11).jpg");
+     background-size: cover;
+   // display:inline;
+    position: absolute;
+    
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+      
+}
+

@@ -1,0 +1,18 @@
+$table-row-hover-background-color: $info;
+
+@import "../../../../../node_modules/bulma/sass/elements/table.sass";
+@import "../../../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../../../node_modules/bulma/sass/elements/form.sass";
+@import "../../../../../node_modules/bulma/sass/components/message.sass";
+@import "../../../../../node_modules/bulma/sass/elements/other.sass";
+
+$info-invert: findColorInvert($info);
+
+promo-table {
+  tbody tr:hover {
+    color: $info-invert;
+  }
+  tbody tr:hover > th {
+    color: $info-invert;
+  }
+}

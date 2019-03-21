@@ -1,0 +1,18 @@
+@import "../../../../../node_modules/bulma/sass/elements/title.sass";
+@import "../../../../../node_modules/bulma/sass/elements/form.sass";
+@import "../../../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../../../../node_modules/bulma/sass/elements/box.sass";
+
+.promo-search .box {
+  cursor: pointer;
+}
+.promo-search .green {
+  background-color: $green;
+}
+.promo-search .green .title {
+  color: findColorInvert($green);
+}
+.promo-search .green .subtitle {
+  color: findColorInvert($green);
+}

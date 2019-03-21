@@ -1,0 +1,27 @@
+{
+  "name": "spi",
+  "private": true,
+  "version": "0.0.1",
+  "description": "SPI : ADM / EVAE",
+  "scripts": {
+    "build": "stencil build",
+    "start-dev": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "install": "stencil build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@stencil/core": "0.18.0",
+    "@stencil/router": "0.3.3",
+    "@stencil/sass": "0.1.1",
+    "bulma": "^0.7.4",
+    "bulma-extensions": "^6.2.4",
+    "express": "^4.16.4",
+    "serve-static": "^1.13.2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "workbox-build": "3.4.1"
+  }
+}

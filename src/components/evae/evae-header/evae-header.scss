@@ -1,0 +1,26 @@
+@import "../../../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../../../node_modules/bulma/sass/elements/button.sass";
+
+evae-header .navbar {
+  margin-bottom: 0vh;
+}
+
+evae-header .navbar-brand .navbar-item {
+  font-size: 1.5em;
+}
+
+evae-header .navbar-menu .navbar-item {
+  font-size: 1em;
+}
+
+evae-header .navbar-brand .navbar-item svg {
+  margin-right: 0.25em;
+}
+
+evae-header .navbar-menu .navbar-link a:hover {
+  color: $white;
+}
+
+evae-header .navbar a {
+  color: #363636;
+}

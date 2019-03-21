@@ -1,0 +1,49 @@
+@import "../../../../../node_modules/bulma/sass/elements/box.sass";
+@import "../../../../../node_modules/bulma/sass/elements/title.sass";
+@import "../../../../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../../../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../../../../node_modules/bulma/sass/components/dropdown.sass";
+@import "../../../../../node_modules/bulma/sass/elements/button.sass";
+
+.form-home .box {
+  cursor: pointer;
+}
+.form-home .blue {
+  background-color: $info;
+}
+.form-home .blue .title {
+  color: findColorInvert($info);
+}
+.form-home .blue .subtitle {
+  color: findColorInvert($info);
+}
+
+.form-home .orange {
+  background-color: $orange;
+}
+.form-home .orange .title {
+  color: findColorInvert($orange);
+}
+.form-home .orange .subtitle {
+  color: findColorInvert($orange);
+}
+
+.form-home .turquoise {
+  background-color: $turquoise;
+}
+.form-home .turquoise .title {
+  color: findColorInvert($turquoise);
+}
+.form-home .turquoise .subtitle {
+  color: findColorInvert($turquoise);
+}
+
+.form-home .yellow {
+  background-color: $yellow;
+}
+.form-home .yellow .title {
+  color: findColorInvert($yellow);
+}
+.form-home .yellow .subtitle {
+  color: findColorInvert($yellow);
+}

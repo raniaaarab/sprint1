@@ -1,0 +1,26 @@
+@import "../../../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../../../node_modules/bulma/sass/elements/button.sass";
+
+adm-header .navbar {
+  margin-bottom: 5vh;
+}
+
+adm-header .navbar-brand .navbar-item {
+  font-size: 1.5em;
+}
+
+adm-header .navbar-menu .navbar-item {
+  font-size: 1em;
+}
+
+adm-header .navbar-brand .navbar-item svg {
+  margin-right: 0.25em;
+}
+
+adm-header .navbar-menu .navbar-link a:hover {
+  color: $white;
+}
+
+adm-header .navbar a {
+  color: #363636;
+}
